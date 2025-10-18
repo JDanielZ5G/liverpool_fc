@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In to MyLFC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #dc0714; /* Liverpool red */
+            color: white;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header py-3">
+        <div class="container text-center">
+            <h1>Liverpool FC - Sign In</h1>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container p-4">
+                    <h2 class="text-center mb-4">Log In</h2>
+                    <p class="text-center mb-4">Please use your existing All Red/MyLFC/liverpoolfc.com account to log in.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password *</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                    </form>
+                    <p class="text-center mt-3"><a href="#">Forgot your password?</a></p>
+                    <p class="text-center">Don't have an account? <a href="https://profile.liverpoolfc.com/en/register?returnUrl=https%3A%2F%2Fprofile.liverpoolfc.com%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dliverpool-membership%26scope%3Dopenid%2520email%2520membership%2520offline_access%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%2F%252Fwww.liverpoolfc.com%252Fsso%252Fcallback%26code_challenge%3DTIAPpEjfqHNVyiiZWw7ViNPv0rU3TvobkjWiue6VMpc%26code_challenge_method%3DS256%26state%3D%252F%26nonce%3Dd44481e2-a0f4-46c6-8f03-daffd4f472d5%26ssoRegistrationType%3DSSO_WEBSITE">Register now</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Liverpool FC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
